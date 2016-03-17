@@ -1,0 +1,39 @@
+{
+  "host": "http://localhost:3000",
+  "token": "auth_token",
+  "gets": [
+    "/",
+    "/user"
+  ],
+  "posts": [
+    {
+      "endpoint": "/",
+      "content-type": "application/json",
+      "body": "{\"msg\": \"del\"}"
+    },
+    {
+      "endpoint": "/user",
+      "content-type": "application/json",
+      "body": "{\"msg\": \"add\"}"
+    }
+  ],
+  "puts": [
+    {
+      "endpoint": "/",
+      "content-type": "application/json",
+      "body": "{\"msg\": \"update\"}"
+    },
+    {
+      "endpoint": "/user",
+      "content-type": "application/json",
+      "body": "{\"msg\": \"update\"}"
+    }
+  ],
+  "deletes": [
+    {
+      "endpoint": "/user",
+      "content-type": "application/json",
+      "body": "{\"msg\": \"delete\"}"
+    }
+  ]
+}
